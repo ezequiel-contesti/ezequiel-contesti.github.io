@@ -29,6 +29,7 @@ body {
 header {
     border-bottom: 1px solid var(--border-color);
     padding-bottom: 0rem;
+    margin-bottom: 0
 }
 
 .header-content {
@@ -48,7 +49,7 @@ header {
 }
 
 .header-text h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-top: 0;
     margin-bottom: 0.1rem;
     line-height: 1.1;
@@ -87,6 +88,46 @@ header {
     text-decoration: underline;
 }
 
+/* --- Domain Expertise --- */
+.industry-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin: 0.75rem auto 0 auto;
+    margin-top: 0.4rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin-bottom: 0rem;
+}
+
+.industry-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #64748b;
+    margin-right: 0.25rem;
+}
+
+.ind-tag {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #cbd5e1;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 0.2rem 0.55rem;
+    border-radius: 4px;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+.ind-tag:hover {
+    border-color: rgba(56, 189, 248, 0.3);
+    color: #38bdf8;
+}
+
 /* --- Section Headings --- */
 section {
     margin-top: 0rem;
@@ -94,12 +135,15 @@ section {
 
 main section:first-of-type {
     margin-top: 0rem;
+    padding-top: 0
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     border-bottom: 2px solid var(--accent-color);
     display: inline-block;
+    margin-top: 0.2rem
+    padding-top: 0
     padding-bottom: 0.1rem;
     margin-bottom: 0.1rem;
 }
@@ -366,7 +410,8 @@ footer {
     font-weight: 600;
     padding: 0.25rem 0.65rem;
     border-radius: 20px;
-    margin-bottom: 0.6rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.2rem;
 }
 
 .status-dot {
@@ -563,4 +608,124 @@ footer {
 
 .btn:hover svg {
     opacity: 1;
+}
+/* --- Fix Box-Sizing  --- */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* --- Key Competencies Style (ex Core Value)  --- */
+.value-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.value-card {
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    padding: 1.1rem;
+}
+
+.value-icon {
+    font-size: 1.3rem;
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+.value-card h3 {
+    font-size: 0.98rem !important;
+    color: #ffffff !important;
+    margin: 0 0 0.4rem 0 !important;
+    font-weight: 600;
+}
+
+.value-card p {
+    font-size: 0.82rem;
+    line-height: 1.5;
+    color: #94a3b8;
+    margin: 0;
+}
+
+/* --- Logo Mobile Fix --- */
+@media (max-width: 680px) {
+    .value-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .company-logo-container {
+        width: 100% !important;
+        max-width: 220px !important; 
+        height: 75px !important;
+        margin: 0 auto 0.75rem auto !important; 
+        padding: 0.6rem !important;
+    }
+}
+
+/* --- Hero Summary enhancement --- */
+.hero-summary {
+    font-size: 0.98rem !important; 
+    line-height: 1.65 !important;
+    color: #cbd5e1 !important; 
+}
+
+/* --- Recent Achievements enhancement --- */
+.achievements-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 1.1rem !important;
+    margin-top: 1rem !important;
+}
+
+.achievement-card {
+    background-color: rgba(255, 255, 255, 0.02) !important;
+    border: 1px solid rgba(16, 185, 129, 0.25) !important;
+    border-top: 3px solid #10b981 !important; /* Línea de acento verde arriba */
+    border-radius: 8px !important;
+    padding: 1.2rem 0.75rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    cursor: default;
+}
+.achievement-card:hover {
+    border-color: #10b981 !important;
+    transform: translateY(-4px) !important;
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.2) !important;
+    background-color: rgba(16, 185, 129, 0.04) !important;
+}
+
+.achievement-title {
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+    color: #34d399 !important;
+    margin: 0 0 0.6rem 0 !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.01em !important;
+}
+.achievement-card p {
+    font-size: 0.83rem !important;
+    line-height: 1.55 !important;
+    color: #94a3b8 !important;
+    margin: 0 !important;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .achievements-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width: 550px) {
+    .achievements-grid {
+        grid-template-columns: 1fr !important;
+    }
 }

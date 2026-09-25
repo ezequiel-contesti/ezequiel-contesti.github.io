@@ -3,99 +3,427 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Extended CV & Project History | Ezequiel Contesti</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Ezequiel Contesti - Extended Executive CV</title>
+    <link rel="stylesheet" href="extended-cv.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="container">
-        <p><a href="index.html" style="color: var(--accent-color); text-decoration: none;">← Back to Summary Portfolio</a></p>
-        <h1>Extended Technical Experience & Projects</h1>
-        <p class="subtitle">Detailed Breakdown of Enterprise Implementations, AI Platforms & Infrastructure Projects</p>
-        <p class="location">📍 Vancouver, BC, Canada</p>
-    </header>
+    <!-- Top Action Bar -->
+    <div class="top-nav no-print">
+        <a href="index.html" class="nav-back">← Back to Portfolio</a>
+        <button onclick="window.print()" class="btn-print">🖨️ Print / Save as PDF</button>
+    </div>
 
-    <main class="container">
+    <main class="cv-container">
 
-        <!-- PROJECT 1 -->
-        <section class="job">
-            <h2>Splight AI-Powered Energy Management Platform</h2>
-            <p class="company">MobSquad / Splight | Senior Technical Support & Implementation Specialist | 2024 – Present</p>
-            
-            <h3>Overview & Impact</h3>
-            <p>Direct Tier 3 technical support and end-to-end client implementations for Splight’s AI platform, designed to optimize electrical grid capacity and renewable energy operations for utility companies.</p>
-            
-            <h3>Core Product Implementations & Scope</h3>
-            <ul>
-                <li><strong>Dynamic Line Rating (DLR):</strong> Standardized integration workflows for real-time thermal capacity monitoring on transmission lines using IoT sensor telemetry and predictive AI models.</li>
-                <li><strong>Battery Energy Storage Systems (BESS):</strong> Configured support procedures for automated battery charge/discharge optimization platforms.</li>
-                <li><strong>Market Management (MM) & DCM:</strong> Led technical onboarding for automated algorithmic trading and dispatch systems in real-time energy markets.</li>
-            </ul>
+        <!-- Header Profile -->
+        <header class="cv-header">
+            <div class="header-main">
+                <h1>Ezequiel Contesti</h1>
+                <p class="role-title">Senior Technical Support Engineer & Implementation Specialist</p>
+                <p class="subtitle">AI Platforms | Enterprise SaaS | Energy & Utilities | Telecom | Fintech</p>
+            </div>
+            <div class="header-contact">
+                <p>📍 Vancouver, BC, Canada</p>
+                <p><a href="mailto:ezequielcontesti@hotmail.com">ezequielcontesti@hotmail.com</a></p>
+                <p><a href="https://linkedin.com" target="_blank">LinkedIn Profile</a></p>
+            </div>
+        </header>
 
-            <h3>Technical Stack & Tools</h3>
-            <p><strong>Tech:</strong> Python, REST APIs, JSON Payloads, SQL, Datadog, Docker, Microservices, Postman, Jira, Confluence</p>
+        <hr class="divider">
+
+        <!-- Personal Summary -->
+        <section class="cv-section">
+            <h2>Personal Summary</h2>
+            <div class="summary-box">
+                <p>
+                    <strong>Senior Technical Support Engineer & Implementation Specialist</strong> with over 12 years of experience handling escalations, enterprise SaaS deployments, and AI platform support across high-growth startups and global corporations. Proven track record of bridging the gap between client operations, engineering teams, and sales divisions to slash deployment lead times by 85% while maintaining 99.9% availability across mission-critical infrastructures.
+                </p>
+                <p>
+                    Expert in managing complex edge and cloud telemetry, structuring SLA frameworks, and automating technical onboarding workflows for high-value enterprise accounts. Known for combining rapid problem-solving agility from fast-paced startups with the operational rigor, compliance discipline, and structured troubleshooting required by global enterprise clients.
+                </p>
+            </div>
         </section>
 
-        <!-- PROJECT 2 -->
-        <section class="job">
-            <h2>EPIC iO AI & Computer Vision IoT Platform</h2>
-            <p class="company">EPIC iO Technologies | Senior Technical Support Engineer | 2023 – 2024</p>
-            
-            <h3>Overview & Impact</h3>
-            <p>Designed and structured the operational Tier 3 support framework for EPIC iO’s proprietary Deep Learning and Computer Vision IoT edge platform, significantly cutting down SLA resolution times.</p>
-            
-            <h3>Key Contributions</h3>
-            <ul>
-                <li><strong>Tier 3 Escalation Framework:</strong> Built the operational bridge between Support Engineers, DevOps, and Machine Learning developers to isolate complex edge-device and cloud software bugs.</li>
-                <li><strong>Log & Query Analysis:</strong> Analyzed system logs, database execution queries, and API network payloads to resolve high-priority incident escalations.</li>
-                <li><strong>Model Monitoring:</strong> Monitored edge computer vision model deployments, verifying payload accuracy and sensor health.</li>
-            </ul>
+        <!-- Experience Section -->
+        <section class="cv-section">
+            <h2>Experience</h2>
 
-            <h3>Technical Stack & Tools</h3>
-            <p><strong>Tech:</strong> Computer Vision Pipelines, REST APIs, Linux/Unix, SQL, MongoDB, Postman, Cloud Infrastructure</p>
+            <!-- Startups -->
+            <div class="outer-group-box">
+                <h3 class="group-title">Startups</h3>
+                <div class="cards-grid">
+                    
+                    <!-- Splight -->
+                    <article class="company-card">
+                        <div class="card-header">
+                            <h3>
+                             <a href="https://www.splight-ai.com" target="_blank" rel="noopener noreferrer">Splight</a>
+                            </h3>
+                            <span class="role">Senior Technical Support Engineer & Implementation Specialist</span>
+                            <span class="date">May 2024 - May 2026</span>
+                        </div>
+                        <p class="company-desc">AI-powered Energy Management Platform</p>
+                        <p class="summary-text">
+                            Owned deployment & support for enterprise AI platform. Primary technical bridge between Power Systems engineers, R&D, Sales, and clients.
+                        </p>
+                        <details class="accordion">
+                            <summary class="btn-toggle">Read More ▾</summary>
+                            <ul class="achievement-list">
+                                <li>Standardized onboarding across 4 core AI products, slashing lead time from 3 weeks to 3 days (85% reduction).</li>
+                                <li>Established initial SLA frameworks and technical workflows for 15+ high-value enterprise accounts.</li>
+                                <li>Engineered custom procedures sustaining 99.9% platform availability.</li>
+                                <li>Led root-cause analysis on complex edge-to-cloud telemetry bugs under strict SLAs.</li>
+                                <li>Performed deep-dive diagnostics across APIs, system logs, and databases to resolve high-priority escalations.</li>
+                            </ul>
+                        </details>
+                    </article>
+
+                    <!-- EPIC iO -->
+                    <article class="company-card">
+                        <div class="card-header">
+                            <h3>
+                             <a href="https://www.epicio.com/" target="_blank" rel="noopener noreferrer">EPIC iO Technologies</a>
+                            </h3>
+                            <span class="role">Senior Technical Support Engineer</span>
+                            <span class="date">Feb 2023 - May 2024</span>
+                        </div>
+                        <p class="company-desc">AIoT & Operational Intelligence Platform</p>
+                        <p class="summary-text">
+                            Designed and implemented Tier 3 escalation frameworks for AI-driven computer vision and IoT sensor edge networks.
+                        </p>
+                        <details class="accordion">
+                            <summary class="btn-toggle">Read More ▾</summary>
+                            <ul class="achievement-list">
+                                <li>Structured Tier 3 escalation pathways linking Tier 1/2 support with AI and DevOps teams.</li>
+                                <li>Managed continuous telemetry monitoring for edge computer vision cameras across distributed tenants.</li>
+                                <li>Authored diagnostic runbooks and troubleshooting documentation for internal teams.</li>
+                                <li>Reduced SLA response and resolution times for high-tier technical escalations.</li>
+                                <li>Supported migrations, new releases, and integration testing across complex tenants.</li>
+                            </ul>
+                        </details>
+                    </article>
+
+                    <!-- Inswitch -->
+                    <article class="company-card">
+                        <div class="card-header">
+                            <h3>
+                                <a href="https://www.inswitch.com" target="_blank" rel="noopener noreferrer">Inswitch</a>
+                            </h3>
+                            <span class="role">Technical Support Engineer</span>
+                            <span class="date">Nov 2021 - Apr 2022</span>
+                        </div>
+                        <p class="company-desc">Fintech & Banking Infrastructure</p>
+                        <p class="summary-text">
+                            Managed technical support for digital wallet and payment gateway integrations across LATAM.
+                        </p>
+                        <details class="accordion">
+                            <summary class="btn-toggle">Read More ▾</summary>
+                            <ul class="achievement-list">
+                                <li>Analyzed API payloads, webhooks, and system logs to isolate and resolve integration failures.</li>
+                                <li>Executed complex SQL database diagnostics and queries using SQL and Linux log inspection.</li>
+                                <li>Partnered with Engineering to troubleshoot and resolve integration workflows for enterprise partners.</li>
+                                <li>Managed integrations for mobile payment platforms, ensuring financial security and compliance.</li>
+                                <li>Standardized technical protocols for payment processing incidents, reducing average ticket resolution times.</li>
+                            </ul>
+                        </details>
+                    </article>
+
+                </div>
+            </div>
+
+            <!-- Corporate -->
+            <div class="outer-group-box">
+                <h3 class="group-title">Corporate</h3>
+                <div class="cards-grid">
+                    
+                    <!-- Hansen -->
+                    <article class="company-card">
+                        <div class="card-header">
+                             <h3>
+                                <a href="https://www.hansencx.com/" target="_blank" rel="noopener noreferrer">Hansen Technologies</a>
+                            </h3>
+                            <span class="role">Technical Support Engineer</span>
+                            <span class="date">Apr 2022 - Nov 2023</span>
+                        </div>
+                        <p class="company-desc">Provisioning Platform</p>
+                        <p class="summary-text">
+                            Delivered high-tier technical support and application maintenance for mission-critical enterprise provisioning systems.
+                        </p>
+                        <details class="accordion">
+                            <summary class="btn-toggle">Read More ▾</summary>
+                            <ul class="achievement-list">
+                                <li>Resolved application incidents involving complex SQL procedures and batch processing under strict SLAs.</li>
+                                <li>Collaborated with global product teams to validate and deploy software releases for major utility providers.</li>
+                                <li>Partnered with cross-functional squads and clients to gather technical requirements and deliver operational fixes.</li>
+                            </ul>
+                        </details>
+                    </article>
+
+                    <!-- Telecom Argentina -->
+                    <article class="company-card">
+                        <div class="card-header">
+                            <h3>
+                                <a href="https://www.personal.com.ar/tech" target="_blank" rel="noopener noreferrer">Telecom Argentina</a>
+                            </h3>
+                            <span class="role">Technical Support Engineer</span>
+                            <span class="date">Jul 2014 - Apr 2022</span>
+                        </div>
+                        <p class="company-desc">Infraestructure & Energy</p>
+                        <p class="summary-text">
+                            Managed energy and infrastructure incidents, operations, and system monitoring for distributed nationwide assets.
+                        </p>
+                        <details class="accordion">
+                            <summary class="btn-toggle">Read More ▾</summary>
+                            <ul class="achievement-list">
+                                <li>Maintained high availability across different environments, databases, and network nodes.</li>
+                                <li>Performed scheduled preventive maintenance on critical telecom assets, hardware devices, and core software applications.</li>
+                                <li>Partnered with internal teams to define technical specifications for software and hardware service delivery and preventive maintenance.</li>
+                            </ul>
+                        </details>
+                    </article>
+
+                    <!-- Neoris -->
+                    <article class="company-card">
+                        <div class="card-header">
+                            <h3>
+                                <a href="https://www.neoris.com" target="_blank" rel="noopener noreferrer">Neoris</a>
+                            </h3>
+                            <span class="role">Systems Support Consultant</span>
+                            <span class="date">Feb 2011 - Jul 2014</span>
+                        </div>
+                        <p class="company-desc">Global Enterprise Consulting</p>
+                        <p class="summary-text">
+                            Provided technical consulting, infrastructure administration, and Tier 2/3 systems support for corporate accounts.
+                        </p>
+                        <details class="accordion">
+                            <summary class="btn-toggle">Read More ▾</summary>
+                            <ul class="achievement-list">
+                                <li>Executed server upgrades, database maintenance, and system configurations following ITIL frameworks.</li>
+                                <li>Provided dedicated support during enterprise software rollouts and client system migrations for Warehouse Management Systems and Oil & Gas platforms.</li>
+                                <li>Conducted functional/technical log analysis, query troubleshooting, and escalation management.</li>
+                            </ul>
+                        </details>
+                    </article>
+
+                </div>
+            </div>
         </section>
 
-        <!-- PROJECT 3 -->
-        <section class="job">
-            <h2>Enterprise Telecom Provisioning & Application Migration</h2>
-            <p class="company">Hansen Technologies | Technical Support Engineer | 2022 – 2023</p>
-            
-            <h3>Overview & Impact</h3>
-            <p>Provided dedicated application support and technical release oversight for enterprise telecom clients, ensuring seamless service provisioning workflows.</p>
-            
-            <h3>Key Contributions</h3>
-            <ul>
-                <li><strong>Provisioning Automation:</strong> Wrote custom automation scripts to run daily health checks on provisioning queues, eliminating manual operational checks.</li>
-                <li><strong>Migration & UAT:</strong> Supported application migrations and led integration testing across multi-environment client setups during release cycles.</li>
-            </ul>
+        <!-- Education & Credentials -->
+        <section class="cv-section grid-2-col">
+            <div>
+                <h2>Education</h2>
+                <div class="info-card">
+                    <h3>Bachelor of Technology</h3>
+                    <h3>Computer Information Systems</h3>
+                    <p class="institution">Degree from Accredited College (WES Validated)</p>
+                    <p class="sub-text">Focus on System Architecture, Database Management, Networking Protocols, and Software Engineering Fundamentals.</p>
+                </div>
+            </div>
 
-            <h3>Technical Stack & Tools</h3>
-            <p><strong>Tech:</strong> Shell Scripting (Bash), SQL, PL/SQL, Unix/Linux, XML/JSON, Proprietary Provisioning Engines</p>
+            <div>
+                <h2>Languages</h2>
+                <div class="info-card">
+                    <ul class="simple-list">
+                        <li><strong>English:</strong> Full Professional Proficiency</li>
+                        <li><strong>Spanish:</strong> Native Speaker</li>
+                        <li><strong>Portuguese:</strong> Intermediate</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <!-- PROJECT 4 -->
-        <section class="job">
-            <h2>Critical Telecom Infrastructure & Telemetry Monitoring</h2>
-            <p class="company">Telecom Argentina | Technical Support Engineer | 2014 – 2022</p>
-            
-            <h3>Overview & Impact</h3>
-            <p>Managed Tier 2/3 infrastructure support, real-time telemetry monitoring, and preventive maintenance routines for mission-critical telecommunications and energy systems across regional nodes.</p>
-            
-            <h3>Key Contributions</h3>
-            <ul>
-                <li><strong>Downtime Reduction:</strong> Designed and deployed proactive monitoring scripts across network nodes, identifying system anomalies before service degradation occurred.</li>
-                <li><strong>Root Cause Analysis (RCA):</strong> Conducted deep-dive RCAs on power and hardware infrastructure failures, standardizing runbooks for team troubleshooting.</li>
-            </ul>
+        <!-- Technical Core Skills -->
+        <section class="cv-section">
+            <h2>Technical Core Skills</h2>
+            <div class="skills-container">
 
-            <h3>Technical Stack & Tools</h3>
-            <p><strong>Tech:</strong> Telemetry Monitoring Systems, Linux/Unix Administration, Networking Protocols, Hardware Diagnostics, SQL</p>
+                <!-- 1. Ticketing Systems -->
+                <div class="skill-category">
+                    <h3>Ticketing Systems</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-companies="Splight | EPIC iO | Hansen">Jira</span>
+                        <span class="skill-tag" data-companies="EPIC iO | Inswitch">Zendesk</span>
+                        <span class="skill-tag" data-companies="Neoris">Remedy</span>
+                        <span class="skill-tag" data-companies="Telecom">Control Desk</span>
+                    </div>
+                </div>
+
+                <!-- 2. Documentation -->
+                <div class="skill-category">
+                    <h3>Documentation</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-companies="Splight | EPIC iO">GitHub</span>
+                        <span class="skill-tag" data-companies="Splight | EPIC iO | Hansen">Confluence</span>
+                        <span class="skill-tag" data-companies="Splight">Notion</span>
+                        <span class="skill-tag" data-companies="Splight | EPIC iO | Hansen | Telecom">Sharepoint</span>
+                    </div>
+                </div>
+
+                <!-- 3. Database Systems -->
+                <div class="skill-category">
+                    <h3>Database Systems</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-companies="Splight | Inswitch | Neoris">SQL</span>
+                        <span class="skill-tag" data-companies="Hansen | Neoris">PL/SQL</span>
+                        <span class="skill-tag" data-companies="Splight | EPIC iO">MongoDB</span>
+                    </div>
+                </div>
+
+                <!-- 4. Operating Systems -->
+                <div class="skill-category">
+                    <h3>Operating Systems</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-companies="Splight | EPIC iO | Telecom">Windows</span>
+                        <span class="skill-tag" data-companies="Splight | Inswitch | EPIC iO">Linux</span>
+                        <span class="skill-tag" data-companies="Inswitch | EPIC iO">Unix</span>
+                        <span class="skill-tag" data-companies="Splight">MacOS</span>
+                    </div>
+                </div>
+
+                <!-- 5. Data Analysis -->
+                <div class="skill-category">
+                    <h3>Data Analysis</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-companies="Telecom | Neoris">Analytics</span>
+                        <span class="skill-tag" data-companies="Hansen | Inswitch">Power BI</span>
+                    </div>
+                </div>
+
+                <!-- 6. Programming -->
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-companies="Splight | EPIC iO">Python</span>
+                        <span class="skill-tag" data-companies="Neoris">PHP</span>
+                        <span class="skill-tag" data-companies="Hansen | EPIC iO">Java</span>
+                        <span class="skill-tag" data-companies="Neoris">.NET</span>
+                    </div>
+                </div>
+
+                <!-- 7. Containers -->
+                <div class="skill-category">
+                    <h3>Containers</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-companies="Splight | EPIC iO">Docker</span>
+                        <span class="skill-tag" data-companies="EPIC iO">Docker Compose</span>
+                        <span class="skill-tag" data-companies="Hansen | EPIC iO">Kubernetes</span>
+                    </div>
+                </div>
+
+                <!-- 8. Cloud Specific -->
+                <div class="skill-category">
+                    <h3>Cloud Specific</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-companies="Hansen">Azure</span>
+                        <span class="skill-tag" data-companies="Splight | Hansen | EPIC iO">AWS</span>
+                        <span class="skill-tag" data-companies="EPIC iO">Chef</span>
+                    </div>
+                </div>
+
+                <!-- 9. Monitoring -->
+                <div class="skill-category">
+                    <h3>Monitoring</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-companies="Splight | Telecom">Datadog</span>
+                        <span class="skill-tag" data-companies="EPIC iO | Hansen">Grafana</span>
+                        <span class="skill-tag" data-companies="EPIC iO">Checkmk</span>
+                    </div>
+                </div>
+
+                <!-- 10. API Management -->
+                <div class="skill-category">
+                    <h3>API Management</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-companies="Inswitch | EPIC iO">REST</span>
+                        <span class="skill-tag" data-companies="Inswitch | Splight | Hansen">Postman</span>
+                        <span class="skill-tag" data-companies="Splight | EPIC iO | Hansen">Swagger</span>
+                    </div>
+                </div>
+
+                <!-- 11. Infrastructure as Code -->
+                <div class="skill-category">
+                    <h3>Infrastructure as Code</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-companies="Splight">Pulumi</span>
+                        <span class="skill-tag" data-companies="EPIC iO">Terraform</span>
+                    </div>
+                </div>
+
+                <!-- 12. LLMs / AI -->
+                <div class="skill-category">
+                    <h3>LLMs / AI</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-companies="Splight | EPIC iO">Claude</span>
+                        <span class="skill-tag" data-companies="Splight | EPIC iO">Gemini</span>
+                        <span class="skill-tag" data-companies="Splight | EPIC iO">Open AI</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Licenses & certifications -->
+        <section class="cv-section">
+            <h2>Licenses & certifications</h2>
+            <div class="skills-wrapper">
+                <div class="skill-group">
+                    <strong>Microsoft Dynamics 365</strong> | NBCC | 2022
+                </div>
+                <div class="skill-group">
+                    <strong>Unix Essentials</strong> | LinkedIn Learning | 2022
+                </div>
+                <div class="skill-group">
+                    <strong>Linux Shell Scripting</strong> | LinkedIn Learning | 2022
+                </div>
+                <div class="skill-group">
+                    <strong>Java Memory Management</strong> | LinkedIn Learning | 2022
+                </div>
+                <div class="skill-group">
+                    <strong>Oracle SQL</strong> | LinkedIn Learning | 2022
+                </div>
+                <div class="skill-group">
+                    <strong>Jira Software</strong> | LinkedIn Learning | 2022
+                </div>
+                 <div class="skill-group">
+                    <strong>Windows Subsystem for Linux</strong> | LinkedIn Learning | 2022
+                </div>
+                 <div class="skill-group">
+                    <strong>Google Analytics</strong> | Udemy | 2022
+                </div>
+                 <div class="skill-group">
+                    <strong>ITIL 4 for Service Management</strong> | Udemy | 2022
+                </div>
+                <div class="skill-group">
+                    <strong>Power BI</strong> | Udemy | 2022
+                </div>
+                <div class="skill-group">
+                    <strong>Tableau</strong> | Udemy | 2022
+                </div>
+            </div>
+        </section>
+
+        <!-- Volunteering -->
+        <section class="cv-section">
+            <h2>Volunteering</h2>
+            <div class="skills-wrapper">
+                <div class="skill-group">
+                    <strong>General Volunteer</strong> | Port Moody Film Society | 2026
+                </div>
+                <div class="skill-group">
+                    <strong>Community Volunteer</strong> | City of New Westminster | 2024
+                </div>
+                <div class="skill-group">
+                    <strong>Animal Shelter Volunteer</strong> | City of New Westminster | 2024
+                </div>
+            </div>
         </section>
 
     </main>
-
-    <footer>
-        <p><a href="index.html" style="color: var(--accent-color); text-decoration: none;">← Back to Main Portfolio</a> | © 2026 Ezequiel Contesti</p>
-    </footer>
 
 </body>
 </html>
