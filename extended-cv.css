@@ -632,3 +632,71 @@ margin-top: auto !important;
         grid-template-columns: 1fr !important;
     }
 }
+
+/* --- Fix Mobile View --- */
+@media (max-width: 768px) {
+   
+    .company-grid, 
+    .startups-grid, 
+    .corporate-grid,
+    .experience-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        grid-template-columns: 1fr !important;
+        gap: 1.25rem !important;
+    }
+
+    .company-card {
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+.company-link {
+    display: inline-block !important;
+    position: relative !important;
+    width: 12px !important;
+    height: 12px !important;
+    margin-left: 6px !important;
+    vertical-align: middle !important;
+    text-decoration: none !important;
+}
+
+/* Punta de la flecha */
+.company-link::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 1px !important;
+    right: 1px !important;
+    width: 6px !important;
+    height: 6px !important;
+    border-top: 2px solid #64748b !important;
+    border-right: 2px solid #64748b !important;
+    transition: all 0.2s ease !important;
+}
+
+/* Cuerpo / Línea diagonal */
+.company-link::after {
+    content: '' !important;
+    position: absolute !important;
+    top: 2px !important;
+    right: 1px !important;
+    width: 8px !important;
+    height: 2px !important;
+    background-color: #64748b !important;
+    transform: rotate(-45deg) !important;
+    transform-origin: top right !important;
+    transition: all 0.2s ease !important;
+}
+
+/* Efecto Hover */
+.company-link:hover::before {
+    border-color: #0284c7 !important;
+}
+
+.company-link:hover::after {
+    background-color: #0284c7 !important;
+}
+
+.company-link:hover {
+    transform: translate(1px, -1px) !important;
+}
