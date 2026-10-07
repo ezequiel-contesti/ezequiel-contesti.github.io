@@ -335,15 +335,6 @@ body {
     .achievement-list { display: block !important; }
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .cv-container { padding: 1.5rem; }
-    .cv-header { flex-direction: column; gap: 0.5rem; }
-    .header-contact { text-align: left; }
-    .company-header { flex-direction: column; gap: 0.2rem; }
-    .job-title { margin-left: 0; display: block; }
-    .grid-2-col { grid-template-columns: 1fr; }
-}
 /* Exterior containers */
 .outer-group-box {
     border: 2px solid #cbd5e1;
@@ -364,28 +355,27 @@ body {
     letter-spacing: 0.05em;
 }
 
-/* Grid of 3 columns for the companies */
+/* Grid of 3 columns for the companies (Desktop default) */
 .cards-grid {
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 1.25rem !important;
-    align-items: stretch !important;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    align-items: stretch;
 }
 
 /* Individual company card */
 .company-card {
-    background-color: #ffffff !important;
-    border: 1px solid #cbd5e1 !important;
-    border-radius: 12px !important;
-    padding: 1.2rem !important;
-    display: flex !important;
-    flex-direction: column !important;
-    height: 100% !important;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
-
 .company-card .card-header {
-    min-height: 7.2rem !important;
+    min-height: 7.2rem;
 }
 
 .card-header h3 {
@@ -394,8 +384,8 @@ body {
     color: #0f172a;
     margin-bottom: 0.2rem;
     min-height: 1.6rem;
-    text-align: center !important;
-    width: 100% !important;
+    text-align: center;
+    width: 100%;
 }
 
 .card-header .role {
@@ -405,6 +395,7 @@ body {
     color: #0284c7;
     line-height: 1.35;
     margin-bottom: 0.4rem;
+    min-height: 2.5rem;
 }
 
 .card-header .date {
@@ -432,7 +423,7 @@ body {
     color: #475569;
     line-height: 1.45;
     margin-bottom: 1rem;
-    min-height: 5.8rem !important;
+    min-height: 5.8rem;
 }
 
 /* Button */
@@ -460,8 +451,13 @@ body {
     color: #0f172a;
     border-color: #cbd5e1;
     margin-bottom: 0.75rem;
-    margin-top: 0 !important;
-    padding-top: 0.25rem !important;
+    margin-top: 0;
+    padding-top: 0.25rem;
+}
+
+/* Push accordion to bottom */
+.company-card .accordion {
+    margin-top: auto;
 }
 
 .achievement-list {
@@ -475,105 +471,63 @@ body {
     line-height: 1.45;
 }
 
-/* --- Adaptation to small screens and mobile devices --- */
-@media (max-width: 950px) {
-    .cards-grid {
-        grid-template-columns: 1fr; 
-    }
-}
-
-.cards-grid {
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 1.25rem !important;
-    align-items: stretch !important; 
-}
-
-.company-card {
-    background-color: #ffffff !important;
-    border: 1px solid #cbd5e1 !important;
-    border-radius: 12px !important;
-    padding: 1.2rem !important;
-    display: flex !important;
-    flex-direction: column !important;
-    height: 100% !important; 
-}
-
-/* Uniform Space for the Position Title */
-.card-header .role {
-    display: block;
-    font-size: 0.83rem;
-    font-weight: 600;
-    color: #0284c7;
-    line-height: 1.35;
-    margin-bottom: 0.4rem;
-    min-height: 2.5rem; 
-}
-
-/* 'Read More' to bottom */
-.company-card .accordion {
-margin-top: auto !important;
-    padding-top: auto !important;
-}
-
-/* --- Skills en 3 Columnas Compactas con Tooltips --- */
-
+/* --- Skills in 3 Compact Columns with Tooltips --- */
 .skills-container {
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 0.85rem !important;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.85rem;
 }
 
 .skill-category {
-    background-color: #ffffff !important;
-    border: 1px solid #cbd5e1 !important;
-    border-radius: 8px !important;
-    padding: 0.75rem 0.85rem !important;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02) !important;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 0.75rem 0.85rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
 }
 
 .skill-category h3 {
-    font-size: 0.78rem !important;
-    font-weight: 700 !important;
-    color: #0f172a !important;
-    margin-bottom: 0.5rem !important;
-    text-transform: uppercase !important;
-    letter-spacing: 0.03em !important;
-    border-bottom: 1px solid #e2e8f0 !important;
-    padding-bottom: 0.25rem !important;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 0.25rem;
 }
 
 .skill-tags {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    gap: 0.35rem !important;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
 }
 
-/* Cajita individual */
+/* Individual skill tag */
 .skill-tag {
-    position: relative !important;
-    display: inline-block !important;
-    background-color: #f1f5f9 !important;
-    color: #334155 !important;
-    border: 1px solid #cbd5e1 !important;
-    border-radius: 5px !important;
-    padding: 0.2rem 0.48rem !important;
-    font-size: 0.75rem !important;
-    font-weight: 600 !important;
-    cursor: pointer !important;
-    transition: all 0.15s ease !important;
+    position: relative;
+    display: inline-block;
+    background-color: #f1f5f9;
+    color: #334155;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    padding: 0.2rem 0.48rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease;
 }
 
-/* Efecto Hover */
+/* Hover effect */
 .skill-tag:hover {
-    background-color: #0284c7 !important;
-    color: #ffffff !important;
-    border-color: #0284c7 !important;
-    transform: translateY(-1px) !important;
-    box-shadow: 0 3px 6px rgba(2, 132, 199, 0.2) !important;
+    background-color: #0284c7;
+    color: #ffffff;
+    border-color: #0284c7;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(2, 132, 199, 0.2);
 }
 
-/* Cartelito flotante (Tooltip) */
+/* Tooltip popup */
 .skill-tag::after {
     content: attr(data-companies);
     position: absolute;
@@ -595,7 +549,7 @@ margin-top: auto !important;
     z-index: 30;
 }
 
-/* Flechita del Tooltip */
+/* Tooltip arrow */
 .skill-tag::before {
     content: '';
     position: absolute;
@@ -612,7 +566,7 @@ margin-top: auto !important;
     z-index: 30;
 }
 
-/* Activar tooltip al pasar el mouse */
+/* Show tooltip on hover */
 .skill-tag:hover::after,
 .skill-tag:hover::before {
     opacity: 1;
@@ -620,22 +574,60 @@ margin-top: auto !important;
     transform: translateX(-50%) translateY(0);
 }
 
-/* Adaptación responsive para tablets y celulares */
+.company-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.company-link svg {
+    transition: all 0.2s ease;
+}
+
+.company-link:hover svg {
+    stroke: #0284c7;
+    transform: translate(1px, -1px);
+}
+
+/* --- Responsive Media Queries --- */
+
 @media (max-width: 900px) {
     .skills-container {
-        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 600px) {
-    .skills-container {
-        grid-template-columns: 1fr !important;
-    }
-}
-
-/* --- Fix Mobile View --- */
 @media (max-width: 768px) {
-   
+    .cv-container {
+        padding: 1.5rem;
+    }
+
+    .cv-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .header-contact {
+        text-align: left;
+    }
+
+    .company-header {
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .job-title {
+        margin-left: 0;
+        display: block;
+    }
+
+    .grid-2-col {
+        grid-template-columns: 1fr;
+    }
+
+    .cards-grid,
     .company-grid, 
     .startups-grid, 
     .corporate-grid,
@@ -651,52 +643,16 @@ margin-top: auto !important;
         box-sizing: border-box !important;
     }
 
-.company-link {
-    display: inline-block !important;
-    position: relative !important;
-    width: 12px !important;
-    height: 12px !important;
-    margin-left: 6px !important;
-    vertical-align: middle !important;
-    text-decoration: none !important;
+    .card-header,
+    .summary-text,
+    .company-desc,
+    .card-header .role {
+        min-height: auto !important;
+    }
 }
 
-/* Punta de la flecha */
-.company-link::before {
-    content: '' !important;
-    position: absolute !important;
-    top: 1px !important;
-    right: 1px !important;
-    width: 6px !important;
-    height: 6px !important;
-    border-top: 2px solid #64748b !important;
-    border-right: 2px solid #64748b !important;
-    transition: all 0.2s ease !important;
-}
-
-/* Cuerpo / Línea diagonal */
-.company-link::after {
-    content: '' !important;
-    position: absolute !important;
-    top: 2px !important;
-    right: 1px !important;
-    width: 8px !important;
-    height: 2px !important;
-    background-color: #64748b !important;
-    transform: rotate(-45deg) !important;
-    transform-origin: top right !important;
-    transition: all 0.2s ease !important;
-}
-
-/* Efecto Hover */
-.company-link:hover::before {
-    border-color: #0284c7 !important;
-}
-
-.company-link:hover::after {
-    background-color: #0284c7 !important;
-}
-
-.company-link:hover {
-    transform: translate(1px, -1px) !important;
+@media (max-width: 600px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
 }
