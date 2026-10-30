@@ -1,7 +1,7 @@
 /* --- Root Setup & Variables (Clean Corporate Light Theme) --- */
 :root {
-    --bg-page: #f8fafc;
-    --bg-card: #ffffff;
+    --bg-page: #475569;
+    --bg-card: #e2e8f0;
     --text-primary: #0f172a;
     --text-secondary: #475569;
     --text-muted: #64748b;
@@ -146,7 +146,7 @@ body {
 }
 
 .summary-box {
-    background-color: #f8fafc;
+    background-color: #cbd5e1;
     border-left: 4px solid var(--accent-blue);
     padding: 1.2rem;
     border-radius: 0 6px 6px 0;
@@ -163,7 +163,7 @@ body {
     border: 1px solid var(--border-card);
     border-radius: 8px;
     padding: 1.5rem;
-    background-color: #ffffff;
+    background-color: #cbd5e1;
 }
 
 .startup-group {
@@ -280,7 +280,7 @@ body {
 }
 
 .info-card {
-    background-color: #f8fafc;
+    background-color: #cbd5e1;
     border: 1px solid var(--border-color);
     padding: 1rem;
     border-radius: 6px;
@@ -318,8 +318,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
-    background-color: #f8fafc;
-    border: 1px solid var(--border-color);
+    background-color: #cbd5e1;
+    border: 1px solid #94a3b8;
     padding: 1.2rem;
     border-radius: 6px;
     font-size: 0.88rem;
@@ -329,7 +329,7 @@ body {
 @media print {
     .no-print { display: none !important; }
     body { background-color: #ffffff; padding: 0; }
-    .cv-container { border: none; box-shadow: none; padding: 0; max-width: 100%; }
+    .cv-container { border: none; box-shadow: none; padding: 0; max-width: 100%; background-color: #ffffff; }
     .accordion { display: block !important; }
     .btn-toggle { display: none !important; }
     .achievement-list { display: block !important; }
@@ -337,10 +337,10 @@ body {
 
 /* Exterior containers */
 .outer-group-box {
-    border: 2px solid #cbd5e1;
+    border: 2px solid #94a3b8;
     border-radius: 18px;
     padding: 1.5rem;
-    background-color: #f8fafc;
+    background-color: #e2e8f0;
     margin-bottom: 2rem;
 }
 
@@ -365,8 +365,8 @@ body {
 
 /* Individual company card */
 .company-card {
-    background-color: #ffffff;
-    border: 1px solid #cbd5e1;
+    background-color: #cbd5e1;
+    border: 1px solid #94a3b8;
     border-radius: 12px;
     padding: 1.2rem;
     display: flex;
@@ -479,8 +479,8 @@ body {
 }
 
 .skill-category {
-    background-color: #ffffff;
-    border: 1px solid #cbd5e1;
+    background-color: #cbd5e1;
+    border: 1px solid #94a3b8;
     border-radius: 8px;
     padding: 0.75rem 0.85rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
@@ -664,7 +664,7 @@ body {
 .detailed-experience .detail-entry {
     margin-bottom: 2rem;
     padding-bottom: 1.5rem;
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid #cbd5e1;
 }
 .detailed-experience .detail-entry:last-child {
     border-bottom: none;
