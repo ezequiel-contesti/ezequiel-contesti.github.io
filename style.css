@@ -435,6 +435,13 @@ footer {
     margin-bottom: 0.35rem;
 }
 
+.experience-line {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.35rem;
+}
+
 .work-mode {
     color: #38bdf8;
 }

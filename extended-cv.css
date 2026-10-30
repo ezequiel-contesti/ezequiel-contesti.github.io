@@ -656,3 +656,35 @@ body {
         grid-template-columns: 1fr;
     }
 }
+/* Complete Professional Experience - plain text, no cards */
+.detailed-experience .detail-intro {
+    color: var(--text-secondary, #475569);
+    margin-bottom: 1.5rem;
+}
+.detailed-experience .detail-entry {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+.detailed-experience .detail-entry:last-child {
+    border-bottom: none;
+}
+.detailed-experience .detail-entry h3 {
+    margin-bottom: 0.2rem;
+}
+.detailed-experience .detail-entry h4 {
+    margin-top: 1.25rem;
+    margin-bottom: 0.4rem;
+}
+.detailed-experience .detail-meta {
+    color: var(--text-secondary, #475569);
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+.detailed-experience .detail-entry ul {
+    padding-left: 1.2rem;
+    line-height: 1.5;
+}
+.detailed-experience .detail-entry li {
+    margin-bottom: 0.4rem;
+}
